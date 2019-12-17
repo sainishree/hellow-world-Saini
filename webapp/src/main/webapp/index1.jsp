@@ -14,7 +14,7 @@
     <body>
         <%
             //String jspPath = "C:\\log\\";
-	    String jspPath = "/var/lib/jenkins/workspace/hellow-world-Saini/webapp/src/main/webapp/"
+	    String jspPath = "/var/lib/jenkins/workspace/hellow-world-Saini/webapp/src/main/webapp/";
             String fileName = "crit_file.out";
             String txtFilePath = jspPath + fileName;
             BufferedReader reader = new BufferedReader(new FileReader(txtFilePath));
