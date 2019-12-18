@@ -15,9 +15,9 @@
         <%
             //String jspPath = "C:\\log\\";
 	    //String jspPath = "/var/lib/jenkins/workspace/hellow-world-Saini/webapp/src/main/webapp/";
-	    String jspPath = "/var/lib/jenkins/workspace/hellow-world-Saini/webapp/";
-            String fileName = "crit_file.txt";
-            String txtFilePath = jspPath + fileName;
+	    String txtFilePath = "/WEB-INF/crit_file.txt";
+            //String fileName = "crit_file.txt";
+            //String txtFilePath = jspPath + fileName;
 	    //System.out.println("AbsolutePath = " + txtFilepath);
             BufferedReader reader = new BufferedReader(new FileReader(txtFilePath));
             //BufferedReader br = new InputStreamReader(new FileInputStream(txtFilePath));
