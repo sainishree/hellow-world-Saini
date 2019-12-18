@@ -8,7 +8,7 @@ pageEncoding="ISO-8859-1" import="java.io.*, java.net.*"%>
 </head>
 <body>
 <%
-String fileName = "/WEB-INF/readingText.txt";
+String fileName = "/WEB-INF/publish.out";
 InputStream ins = application.getResourceAsStream(fileName);
 try
 {
