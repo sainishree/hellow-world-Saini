@@ -1,2 +1,1 @@
-/etc/resolv.conf
-/etc/hosts
+Hi how are you
