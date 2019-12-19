@@ -11,7 +11,7 @@ pageEncoding="ISO-8859-1" import="java.io.*, java.net.*"%>
 </head>
 <body>
 <%
-String fileName = "/WEB-INF/publish.out";
+String fileName = "/WEB-INF/publish1.out";
 InputStream ins = application.getResourceAsStream(fileName);
 try
 {
