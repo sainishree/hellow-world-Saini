@@ -20,7 +20,6 @@
             //String txtFilePath = jspPath + fileName;
 	    //System.out.println("AbsolutePath = " + txtFilepath);
             BufferedReader reader = new BufferedReader(new FileReader(txtFilePath));
-            //BufferedReader br = new InputStreamReader(new FileInputStream(txtFilePath));
             StringBuilder sb = new StringBuilder();
             String line;
 
