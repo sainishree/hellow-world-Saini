@@ -15,7 +15,7 @@
         <%
             //String jspPath = "C:\\log\\";
 	    //String jspPath = "/var/lib/jenkins/workspace/hellow-world-Saini/webapp/src/main/webapp/";
-	    String txtFilePath = "/WEB-INF/crit_file.txt";
+	    String txtFilePath = "/WEB-INF/publish.out";
             //String fileName = "crit_file.txt";
             //String txtFilePath = jspPath + fileName;
 	    //System.out.println("AbsolutePath = " + txtFilepath);
