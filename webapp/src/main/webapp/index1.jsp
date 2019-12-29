@@ -1,33 +1,17 @@
-<%@page import="java.io.FileInputStream"%>
-<%@page import="java.io.File"%>
-<%@page import="java.io.InputStreamReader"%>
-<%@page import="java.net.URL"%>
-<%@page import="java.io.FileReader"%>
-<%@page import="java.io.BufferedReader"%>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title> Critical Files modified </title>
-    </head>
-    <body>
-        <%
-            //String jspPath = "C:\\log\\";
-	    //String jspPath = "/var/lib/jenkins/workspace/hellow-world-Saini/webapp/src/main/webapp/";
-	    String txtFilePath = "/WEB-INF/publish.out";
-            //String fileName = "crit_file.txt";
-            //String txtFilePath = jspPath + fileName;
-	    //System.out.println("AbsolutePath = " + txtFilepath);
-            BufferedReader reader = new BufferedReader(new FileReader(txtFilePath));
-            StringBuilder sb = new StringBuilder();
-            String line;
-
-            while((line = reader.readLine())!= null){
-                sb.append(line+"\n");
-            }
-            out.println(sb.toString()); 
-        %>
-
-    </body>
-</html>
+<%!
+  String[] colors = {"Green", "yellow", "Black", "Red", "pink"};
+%>
+<HTML>
+  <HEAD><TITLE>Setting Colors Code</TITLE></HEAD>
+  <BODY>
+    <H1>List of colors</H1>
+    <TABLE BORDER="1" align="center" bgcolor="#E8FDFF"
+     weight="50%" height="40%">
+      <TH>Color Name:</TH>
+      <% for (int i=0; i<colors.length; i++) { %>
+        <TR><TD bgcolor="<%=colors[i] %>">
+     <font color="white"><%= colors[i]%></font></TD></TR>
+      <% } %>
+    </TABLE>
+  </BODY>
+</HTML>
