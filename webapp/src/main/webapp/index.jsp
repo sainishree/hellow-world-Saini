@@ -10,7 +10,6 @@
    
    <body>
       <center>
-         <h2>Auto Refresh Header Example</h2>
          <%
             // Set refresh, autoload time as 5 seconds
             response.setIntHeader("Refresh", 5);
@@ -30,6 +29,31 @@
             String CT = hour+":"+ minute +":"+ second +" "+ am_pm;
             out.println("Crrent Time: " + CT + "\n");
          %>
+<%
+String fileName = "/WEB-INF/publish.out";
+InputStream ins = application.getResourceAsStream(fileName);
+try
+{
+if(ins == null)
+{
+response.setStatus(response.SC_NOT_FOUND);
+}
+else
+{
+BufferedReader br = new BufferedReader((new InputStreamReader(ins)));
+String data;
+while((data= br.readLine())!= null)
+{
+out.println(data+"<br>");
+}
+}
+}
+catch(IOException e)
+{
+out.println(e.getMessage());
+}
+%>
+
       </center>
    
    </body>
