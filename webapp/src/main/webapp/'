@@ -1,0 +1,5 @@
+for i in `cat /root/crit_files`
+do
+#find -type f -name $i -mmin -30 >> /tmp/crit_file_mod.out
+find $i -mmin -5 > /tmp/crit_file_mod.out
+done

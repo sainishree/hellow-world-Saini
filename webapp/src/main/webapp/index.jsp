@@ -5,14 +5,14 @@
 
 <html>
    <head>
-      <title>Auto Refresh Header Example</title>
+      <title>Hello, Welcome DXC Gear</title>
    </head>
    
    <body>
       <center>
          <%
-            // Set refresh, autoload time as 5 seconds
-            response.setIntHeader("Refresh", 5);
+            // Set refresh, autoload time as 10 seconds
+            response.setIntHeader("Refresh", 10);
             
             // Get current time
             Calendar calendar = new GregorianCalendar();
@@ -27,8 +27,10 @@
             else
                am_pm = "PM";
             String CT = hour+":"+ minute +":"+ second +" "+ am_pm;
-            out.println("Crrent Time: " + CT + "\n");
+            out.println("Current Time: " + CT + "\n");
          %>
+
+      </center>
 <%
 String fileName = "/WEB-INF/publish.out";
 InputStream ins = application.getResourceAsStream(fileName);
@@ -53,8 +55,6 @@ catch(IOException e)
 out.println(e.getMessage());
 }
 %>
-
-      </center>
    
    </body>
 </html>
