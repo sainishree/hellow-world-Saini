@@ -44,13 +44,13 @@ else
 {
 BufferedReader br = new BufferedReader((new InputStreamReader(ins)));
 String data;
+<font color="Red">
 while((data= br.readLine())!= null)
 {
-<font color="Red">
 out.println(data+"<br>");
+}
+}
 </font>
-}
-}
 }
 catch(IOException e)
 {
