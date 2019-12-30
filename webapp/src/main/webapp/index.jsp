@@ -46,7 +46,9 @@ BufferedReader br = new BufferedReader((new InputStreamReader(ins)));
 String data;
 while((data= br.readLine())!= null)
 {
+<font color="red">
 out.println(data+"<br>");
+</font>
 }
 }
 }
