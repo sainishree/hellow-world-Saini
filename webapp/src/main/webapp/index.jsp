@@ -3,8 +3,16 @@
 <h2> Below files are modified in last 5 mins </h2>
 <%@ page import = "java.io.*,java.util.*" %>
 
+
 <html>
    <head>
+<style type="text/css">
+.custom {
+	font-family: Courier;
+	color: red;
+	font-size:20px;
+}
+</style>
       <title>Hello, Welcome DXC Gear</title>
    </head>
    
@@ -46,10 +54,10 @@ BufferedReader br = new BufferedReader((new InputStreamReader(ins)));
 String data;
 while((data= br.readLine())!= null)
 {
-<font color="red">
+<p class="custom">
 out.println(data+"<br>");
-</font>
-}
+</p>
+}	
 }
 }
 catch(IOException e)
