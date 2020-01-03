@@ -20,7 +20,7 @@
       <center>
          <%
             // Set refresh, autoload time as 10 seconds
-            response.setIntHeader("Refresh", 10);
+            response.setIntHeader("Refresh", 60);
             
             // Get current time
             Calendar calendar = new GregorianCalendar();
