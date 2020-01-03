@@ -1,5 +1,5 @@
 <h1> Hello, Welcome DXC Gear </h1>
-<h2> Completed DevOps CI/CD pipeline integration with kubernetes </h2>
+<h2> DevOps CI/CD pipeline using Maven,Java,Jenkins,Ansible,Docker,Git and Kubernetes </h2>
 <h2> Below files are modified in last 5 mins </h2>
 <%@ page import = "java.io.*,java.util.*" %>
 
