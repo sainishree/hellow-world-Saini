@@ -1,8 +1,6 @@
 <h1> Hello, Welcome DXC Gear </h1>
 <h2> DevOps CI/CD pipeline using Maven,Java,Jenkins,Ansible,Docker,Git and Kubernetes </h2>
-<h2> Below files are modified in last 5 mins </h2>
 <%@ page import = "java.io.*,java.util.*" %>
-
 
 <html>
    <head>
@@ -18,6 +16,7 @@
    
    <body bgcolor="#999999">
       <center>
+<FONT SIZE="5" COLOR="#660033"> Below files are modified in last 5 minutes </FONT>
          <%
             // Set refresh, autoload time as 10 seconds
             response.setIntHeader("Refresh", 60);
@@ -55,9 +54,6 @@ String data;
 while((data= br.readLine())!= null)
 {
 out.println(data+ "<br>");
-out.println("<code>out</code> is an <b>");
-out.println(out.getClass().getName());
-out.println("</b> object.");
 }	
 }
 }
