@@ -16,7 +16,7 @@
       <title>Hello, Welcome DXC Gear</title>
    </head>
    
-   <body>
+   <body bgcolor="#999999">
       <center>
          <%
             // Set refresh, autoload time as 10 seconds
