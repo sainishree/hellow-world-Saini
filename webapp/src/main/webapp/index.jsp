@@ -19,7 +19,7 @@
 <FONT SIZE="8" COLOR="#FF0000"> Below files are modified in last 5 minutes </FONT>
          <%
             // Set refresh, autoload time as 10 seconds
-            response.setIntHeader("Refresh", 60);
+            response.setIntHeader("Refresh", 30);
             
             // Get current time
             Calendar calendar = new GregorianCalendar();
