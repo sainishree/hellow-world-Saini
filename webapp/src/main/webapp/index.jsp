@@ -54,7 +54,7 @@ BufferedReader br = new BufferedReader((new InputStreamReader(ins)));
 String data;
 while((data= br.readLine())!= null)
 {
-<p class="custom"> out.println(data+"<br>");</p>
+<p class="custom"> <% out.println(data+"<br>"); %> </p>
 }	
 }
 }
