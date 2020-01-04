@@ -52,7 +52,7 @@ else
 {
 BufferedReader br = new BufferedReader((new InputStreamReader(ins)));
 String data;%>
-<TABLE BORDER="1" align="center" bgcolor="#E8FDFF"
+<TABLE BORDER="1" align="center" bgcolor="#E8FDFF">
 <%while((data= br.readLine())!= null)
 {%>
 <font color="red"> 
