@@ -54,7 +54,10 @@ BufferedReader br = new BufferedReader((new InputStreamReader(ins)));
 String data;
 while((data= br.readLine())!= null)
 {
-out.println(<p class="custom"> data+</p> "<br>");
+out.println(data+ "<br>");
+out.println("<code>out</code> is an <b>");
+out.println(out.getClass().getName());
+out.println("</b> object.");
 }	
 }
 }
