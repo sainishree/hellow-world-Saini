@@ -14,7 +14,7 @@
       <title>Hello, Welcome DXC Gear</title>
    </head>
    
-   <body bgcolor="#999999">
+   <body>
       <center>
 <FONT SIZE="5" COLOR="#660033"> Below files are modified in last 5 minutes </FONT>
          <%
