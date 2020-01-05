@@ -57,7 +57,7 @@ String data;%>
 {%>
 <font color="red"> 
 <% 
-out.println(<data+ "<br>"); 
+out.println(data+ "<br>"); 
 %>
 </font></TD></TR>
 <%}%>
