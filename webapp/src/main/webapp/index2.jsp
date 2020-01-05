@@ -62,8 +62,9 @@ out.println(data+ "<br>");
 </font></TD></TR>
 <%}%>
 </TABLE>
-}
-}
+<%}%>
+<%}%>
+<%
 catch(IOException e)
 {
 out.println(e.getMessage());
