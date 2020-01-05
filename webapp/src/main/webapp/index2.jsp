@@ -55,6 +55,7 @@ String data;%>
 <TABLE BORDER="1" align="center" bgcolor="#E8FDFF">
 <%while((data= br.readLine())!= null)
 {%>
+<TR><TD>
 <font color="red"> 
 <% 
 out.println(data+ "<br>"); 
