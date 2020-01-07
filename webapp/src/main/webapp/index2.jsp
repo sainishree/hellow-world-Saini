@@ -6,16 +6,10 @@
 
 <html>
    <head>
-<style type="text/css">
-.myspan {
-  color: red;
-}
-</style>
       <title>Hello, Welcome DXC Gear</title>
    </head>
 
    <body bgcolor="#999999">
-      <center>
          <%
             // Set refresh, autoload time as 10 seconds
             response.setIntHeader("Refresh", 60);
@@ -34,10 +28,7 @@
                am_pm = "PM";
             String CT = hour+":"+ minute +":"+ second +" "+ am_pm;
             out.println("Current Time: " + CT + "\n");
-         %>
 
-      </center>
-<%
 String fileName = "/WEB-INF/publish.out"; 
 InputStream ins = application.getResourceAsStream(fileName);
 try
@@ -52,9 +43,8 @@ BufferedReader br = new BufferedReader((new InputStreamReader(ins)));
 String data;
 while((data= br.readLine())!= null)
 {
-out.println(%> <"span class=\"myspan\"> <% data+ "<br>" %> </span> <%);%>  
-<%-- out.println("<span class=\"myspan\">This is a sample string</span>"); --%>
-<%}
+out.println(data+ "<br>" );  
+}
 }
 }
 
