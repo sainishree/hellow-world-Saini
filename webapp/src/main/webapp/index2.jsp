@@ -9,7 +9,7 @@
       <title>Hello, Welcome DXC Gear</title>
    </head>
 
-   <body text="red" bgcolor="#999999">
+   <body >
          <%
             // Set refresh, autoload time as 10 seconds
             response.setIntHeader("Refresh", 60);
@@ -43,7 +43,9 @@ BufferedReader br = new BufferedReader((new InputStreamReader(ins)));
 String data;
 while((data= br.readLine())!= null)
 {
+out.println("<p> <font color='red'>");
 out.println(data+ "<br>" );  
+out.println("</font></p>");
 }
 }
 }
