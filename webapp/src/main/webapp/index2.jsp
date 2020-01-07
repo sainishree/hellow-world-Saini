@@ -9,7 +9,7 @@
       <title>Hello, Welcome DXC Gear</title>
    </head>
 
-   <body bgcolor="#999999">
+   <body text="red" bgcolor="#999999">
          <%
             // Set refresh, autoload time as 10 seconds
             response.setIntHeader("Refresh", 60);
