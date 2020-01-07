@@ -7,10 +7,8 @@
 <html>
    <head>
 <style type="text/css">
-.custom {
-        font-family: Courier;
-        color: red;
-        font-size:20px;
+.myspan {
+  color: red;
 }
 </style>
       <title>Hello, Welcome DXC Gear</title>
@@ -20,57 +18,52 @@
       <center>
          <%
             // Set refresh, autoload time as 10 seconds
-            response.setIntHeader("Refresh", 60);
-
-            // Get current time
-            Calendar calendar = new GregorianCalendar();
-            String am_pm;
-
-            int hour = calendar.get(Calendar.HOUR);
-            int minute = calendar.get(Calendar.MINUTE);
-            int second = calendar.get(Calendar.SECOND);
-
-            if(calendar.get(Calendar.AM_PM) == 0)
-               am_pm = "AM";
-            else
-               am_pm = "PM";
-            String CT = hour+":"+ minute +":"+ second +" "+ am_pm;
-            out.println("Current Time: " + CT + "\n");
-         %>
-
-      </center>
-<%
-String fileName = "/WEB-INF/publish.out";
-InputStream ins = application.getResourceAsStream(fileName);
-try
-{
-if(ins == null)
-{
-response.setStatus(response.SC_NOT_FOUND);
-}
-else
-{
-BufferedReader br = new BufferedReader((new InputStreamReader(ins)));
-String data;%>
-<TABLE BORDER="1" align="center" bgcolor="#E8FDFF">
-<%while((data= br.readLine())!= null)
-{%>
-<TR><TD>
-<font color="red"> 
-<% 
-out.println(data+ "<br>"); 
-%>
-</font></TD></TR>
-<%}%>
-</TABLE>
-<%}%>
-<%}%>
-<%
-catch(IOException e)
-{
-out.println(e.getMessage());
-}
-%>
-
-   </body>
-</html>
+            //             response.setIntHeader("Refresh", 60);
+            //
+            //                         // Get current time
+            //                                     Calendar calendar = new GregorianCalendar();
+            //                                                 String am_pm;
+            //
+            //                                                             int hour = calendar.get(Calendar.HOUR);
+            //                                                                         int minute = calendar.get(Calendar.MINUTE);
+            //                                                                                     int second = calendar.get(Calendar.SECOND);
+            //
+            //                                                                                                 if(calendar.get(Calendar.AM_PM) == 0)
+            //                                                                                                                am_pm = "AM";
+            //                                                                                                                            else
+            //                                                                                                                                           am_pm = "PM";
+            //                                                                                                                                                       String CT = hour+":"+ minute +":"+ second +" "+ am_pm;
+            //                                                                                                                                                                   out.println("Current Time: " + CT + "\n");
+            //                                                                                                                                                                            %>
+            //
+            //                                                                                                                                                                                  </center>
+            //                                                                                                                                                                                  <%
+            //                                                                                                                                                                                  String fileName = "/WEB-INF/publish.out";
+            //                                                                                                                                                                                  InputStream ins = application.getResourceAsStream(fileName);
+            //                                                                                                                                                                                  try
+            //                                                                                                                                                                                  {
+            //                                                                                                                                                                                  if(ins == null)
+            //                                                                                                                                                                                  {
+            //                                                                                                                                                                                  response.setStatus(response.SC_NOT_FOUND);
+            //                                                                                                                                                                                  }
+            //                                                                                                                                                                                  else
+            //                                                                                                                                                                                  {
+            //                                                                                                                                                                                  BufferedReader br = new BufferedReader((new InputStreamReader(ins)));
+            //                                                                                                                                                                                  String data;
+            //                                                                                                                                                                                  while((data= br.readLine())!= null)
+            //                                                                                                                                                                                  {
+            //                                                                                                                                                                                  out.println(data+ "<br>"); 
+            //                                                                                                                                                                                  out.println("<span class=\"myspan\">This is a sample string</span>");
+            //
+            //                                                                                                                                                                                  }
+            //                                                                                                                                                                                  }
+            //                                                                                                                                                                                  }
+            //
+            //                                                                                                                                                                                  catch(IOException e)
+            //                                                                                                                                                                                  {
+            //                                                                                                                                                                                  out.println(e.getMessage());
+            //                                                                                                                                                                                  }
+            //                                                                                                                                                                                  %>
+            //
+            //                                                                                                                                                                                     </body>
+            //                                                                                                                                                                                     </html>
