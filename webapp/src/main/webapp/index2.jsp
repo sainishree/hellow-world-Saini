@@ -52,7 +52,7 @@ BufferedReader br = new BufferedReader((new InputStreamReader(ins)));
 String data;
 while((data= br.readLine())!= null)
 {
-out.println("<span class=\"myspan\"> <% data+ "<br>" %> </span>"); 
+<% out.println %>("<span class=\"myspan\"> <% data+ "<br>" %>   </span>"); 
 out.println("<span class=\"myspan\">This is a sample string</span>");
 
 }
