@@ -2,3 +2,5 @@
 /etc/profile
 192.168.1.21
 /etc/sendmail.cf
+192.168.1.22
+/etc/sendmail.cf
