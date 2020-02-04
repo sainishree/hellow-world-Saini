@@ -52,13 +52,9 @@ BufferedReader br = new BufferedReader((new InputStreamReader(ins)));
 String data;
 while((data= br.readLine())!= null)
 {
-out.println("<table>");
-out.println("<tr><td>");
 out.println("<p> <font color='red'>");
 out.println(data+ "<br>" );
 out.println("</font></p>");
-out.println("</td></tr>");
-out.println("</table>");
 }	
 }
 }
