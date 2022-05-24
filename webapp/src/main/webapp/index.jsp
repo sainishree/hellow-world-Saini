@@ -1,4 +1,4 @@
-<h1> Welcome to DXC Gear live </h1>
+<h1> Welcome to My Gear live </h1>
 <h2> DevOps CI/CD pipeline using Maven,Java,Jenkins,Ansible,Docker,Git and Kubernetes </h2>
 <%@ page import = "java.io.*,java.util.*" %>
 
