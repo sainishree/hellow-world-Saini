@@ -1,5 +1,5 @@
 <h1> Welcome to My Gear  </h1>
-<h2> DevOps CI/CD pipeline using Maven,Java,Jenkins,Ansible,Docker,Git and Kubernetes - Gear Live </h2>
+<h2> DevOps CI/CD pipeline using Maven,Java,Jenkins,Ansible,Docker,Git and Kubernetes - Gear Live !!!</h2>
 <%@ page import = "java.io.*,java.util.*" %>
 
 <html>
@@ -11,7 +11,7 @@
 	font-size:20px;
 }
 </style>
-      <title>Hello, Welcome Gear Live</title>
+      <title>Hello, Welcome Gear Live!!! </title>
    </head>
    
    <body>
