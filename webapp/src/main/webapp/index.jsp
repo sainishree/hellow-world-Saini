@@ -11,7 +11,7 @@
 	font-size:20px;
 }
 </style>
-      <title>Hello, Welcome Gear</title>
+      <title>Hello, Welcome Gear Live</title>
    </head>
    
    <body>
