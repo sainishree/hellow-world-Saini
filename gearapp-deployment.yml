@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sainishree-gearapp
+  labels:
+    app: gearapp
+
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: gearapp
+
+  template:
+    metadata:
+      labels:
+        app: gearapp
+    spec:
+      containers:
+      - name: gearapp
+        image: sainishree/gearapp
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
