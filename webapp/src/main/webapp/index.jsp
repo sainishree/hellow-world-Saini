@@ -1,5 +1,5 @@
 <h1> Welcome to My Gear Live !!! </h1>
-<h2> DevOps CI/CD pipeline using Maven,Jenkins,Ansible,Docker,Git,webhook and Kubernetes - Gear Live !!!</h2>
+<h2> DevOps CI/CD pipeline using Maven,Jenkins,Ansible,Docker,Git,PollSCM - Gear Live !!!</h2>
 <%@ page import = "java.io.*,java.util.*" %>
 
 <html>
