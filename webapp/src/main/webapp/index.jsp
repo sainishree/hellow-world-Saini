@@ -1,4 +1,4 @@
-<h1> Welcome to My Gear Live !!! </h1>
+<h1> Welcome to DevOps training  !!! </h1>
 <h2> DevOps CI/CD pipeline using Maven,Jenkins,Ansible,Docker,Git - Gear Live !!!</h2>
 <%@ page import = "java.io.*,java.util.*" %>
 
