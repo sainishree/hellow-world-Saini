@@ -1,4 +1,3 @@
 # maven-project
 
-Simple Maven Project 
-by Saini
+Simple Maven Project by Saini

@@ -1,5 +1,3 @@
-<h1> Welcome to My Gear Live !!! </h1>
-<h2> DevOps CI/CD pipeline using Maven,Jenkins,,Docker,Git, PollSCM - Gear Live !!!</h2>
 <%@ page import = "java.io.*,java.util.*" %>
 
 <html>
@@ -16,7 +14,6 @@
    
    <body>
       <center>
-<FONT SIZE="6" COLOR="#FF0000"> Below server's file/s are modified in last 5 minutes </FONT>
          <%
             // Set refresh, autoload time as 10 seconds
             response.setIntHeader("Refresh", 10);
