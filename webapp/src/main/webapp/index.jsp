@@ -10,6 +10,7 @@
 }
 </style>
       <title>Hello, Welcome Gear Live!!! </title>
+<h1> Using ArgoCd </h1>
    </head>
    
    <body>
